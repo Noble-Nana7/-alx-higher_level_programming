@@ -1,17 +1,7 @@
 #!/bin/bash
 
-# Check if PYFILE is set
-if [ -z "$PYFILE" ]; then
-  echo "Error: PYFILE environment variable is not set."
-  exit 1
-fi
-
-# Compile the Python file to bytecode and save it as $PYFILEc
+# Compile the Python file stored in PYFILE and output as PYFILEc
 python3 -m py_compile "$PYFILE"
 
-# Rename the compiled .pyc file to $PYFILEc
-compiled_file=$(dirname "$PYFILE")/__pycache__/$(basename "$PYFILE" .py).cpython-*.pyc
-output_file="$PYFILE"c
-mv "$compiled_file" "$output_file"
-
-echo "Compiled Python file saved as: $output_file"
+# Rename the compiled .pyc file to PYFILEc
+mv "${PYFILE}c" "${PYFILE%.py}.pyc"
