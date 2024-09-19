@@ -5,3 +5,5 @@ python3 -m py_compile "$PYFILE"
 
 # Rename the compiled .pyc file to PYFILEc
 mv "${PYFILE}c" "${PYFILE%.py}.pyc"
+
+exit 0
