@@ -2,10 +2,9 @@
 import random
 number = random.randint(-10, 10)
 
-match number:
-    case x if x < 0:
-        print(f"{x} is negative")
-    case x if x == 0:
-        print(f"{x} is zero")
-    case x if x > 0:
-        print(f"{x} is positive")
+if number < 0:
+    print(f"{number} is negative")
+elif number > 0:
+    print(f"{number} is positive")
+else:
+    print(f"{number} is zero")
