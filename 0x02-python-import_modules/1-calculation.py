@@ -8,9 +8,9 @@ if __name__ == "__main__":
     b = 5
 
     r_add = add(a, b)
-    r_minus = subtract(a, b)
-    r_mul = multiply(a, b)
-    r_div = divide(a, b)
+    r_minus = sub(a, b)
+    r_mul = mul(a, b)
+    r_div = div(a, b)
 
     print("{} + {} = {}".format(a, b, r_add))
     print("{} - {} = {}".format(a, b, r_minus))
