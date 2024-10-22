@@ -2,8 +2,7 @@
 
 def max_integer(my_list=[]):
     if my_list != " ":
-        for i in my_list:
-            if i * 2 > 100:
-                return i
+        my_list.sort()
+        return my_list[-1]
     else:
         return None
