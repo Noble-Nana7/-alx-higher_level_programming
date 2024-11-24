@@ -9,6 +9,12 @@ def safe_print_list_integers(my_list=[], x=0):
             except (ValueError, TypeError):
                 continue
     except IndexError:
-        pass
-    print()
+        raise
+    finally:
+        print()
     return count
+
+my_list = [1, 2, 3, 4]
+x = len(my_list) + 4
+nb_print = safe_print_list_integers(my_list, x)
+print("{:d}".format(nb_print))
