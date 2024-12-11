@@ -6,6 +6,7 @@ size attributr. The size is validated to ensure it is an integer
 and is >= 0.
 """
 
+
 class Square:
 
     """
@@ -13,7 +14,6 @@ class Square:
     with validation for size input
 
     """
-
 
     def __init__(self, size=0):
         """
