@@ -6,6 +6,7 @@ The class currently doesn't have any attributes or methods but serves
 as a basic template for defining a square.
 """
 
+
 class Square:
 
     """
