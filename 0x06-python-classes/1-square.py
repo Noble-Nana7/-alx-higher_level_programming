@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-This module defines a class Square that represents a square with a private 
-size attribute. The size is used to define the square and is kept private 
+This module defines a class Square that represents a square with a private
+size attribute. The size is used to define the square and is kept private
 for future control and validation of its value.
 """
+
 
 class Square:
     """
