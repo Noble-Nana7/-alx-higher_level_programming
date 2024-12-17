@@ -87,4 +87,3 @@ if __name__ == "__main__":
     square.size = 4
     square.my_print()
     print("Updated Area:", square.area())
-
