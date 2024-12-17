@@ -4,15 +4,14 @@
 This module defines a class Square that represents a square with
 a private size attribute and a method to compute its area. The size
 is validated to ensure it is an integer and >= 0.
-
 """
+
 
 class Square:
     """
     A class to define a square with a private size attribute and a method to
     compute the square's area.
     """
-
 
     def __init__(self, size=0):
         """
